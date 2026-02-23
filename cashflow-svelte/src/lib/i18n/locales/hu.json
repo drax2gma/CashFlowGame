@@ -1,0 +1,97 @@
+{
+    "app": {
+        "title": "cashflow.gmz.hu",
+        "description": "A CashFlow 101 társasjáték modern adaptációja"
+    },
+    "navigation": {
+        "home": "Főoldal",
+        "game": "Játék",
+        "settings": "Beállítások",
+        "help": "Súgó"
+    },
+    "home": {
+        "welcome": "Üdvözöljük a CashFlowJs-ben",
+        "clickToStart": "Kattintson a kezdéshez",
+        "version": "Verzió: {version}",
+        "createNewGame": "Új játék létrehozása"
+    },
+    "setup": {
+        "title": "Játék beállítása",
+        "numberOfPlayers": "Játékosok száma",
+        "player": "{number}. játékos",
+        "name": "Név",
+        "insurance": "Biztosítás",
+        "job": "Foglalkozás",
+        "color": "Szín",
+        "randomJob": "Véletlenszerű foglalkozás",
+        "randomColor": "Véletlenszerű szín",
+        "startGame": "Játék indítása"
+    },
+    "game": {
+        "turn": "{number}. kör",
+        "currentPlayer": "Jelenlegi játékos: {name}",
+        "rollDice": "Kockadobás",
+        "endTurn": "Kör befejezése",
+        "finance": "Pénzügyek",
+        "assets": "Eszközök",
+        "liabilities": "Kötelezettségek",
+        "income": "Bevétel",
+        "expenses": "Kiadások",
+        "cash": "Készpénz"
+    },
+    "cards": {
+        "smallDeal": "Kis üzlet",
+        "bigDeal": "Nagy üzlet",
+        "opportunity": "Lehetőség",
+        "doodad": "Cicoma",
+        "charity": "Jótékonykodás",
+        "paycheck": "Fizetés",
+        "downsized": "Létszámcsökkentés",
+        "buy": "Vásárlás",
+        "sell": "Eladás",
+        "pass": "Átugrás",
+        "pay": "Fizetés"
+    },
+    "options": {
+        "title": "Játékbeállítások",
+        "insurance": "Létszámcsökkentés biztosítás",
+        "kids": "Nagy családok",
+        "liquidating": "Eszközök likvidálása",
+        "paycheckDoodads": "Cicomák a fizetéssel",
+        "mortgage": "Jelzálog törlesztések",
+        "speedStart": "Gyors kezdés"
+    },
+    "settings": {
+        "language": "Nyelv",
+        "audio": {
+            "title": "Hangbeállítások",
+            "masterVolume": "Fő hangerő",
+            "musicVolume": "Zene hangerő",
+            "sfxVolume": "Hanghatások hangerő",
+            "enableMusic": "Háttérzene bekapcsolása",
+            "enableSfx": "Hanghatások bekapcsolása",
+            "enableUiSounds": "UI hangok bekapcsolása",
+            "testMusic": "Zene tesztelése",
+            "testSfx": "Hanghatás tesztelése"
+        },
+        "tooltips": {
+            "title": "Eszköztipp beállítások",
+            "delay": "Eszköztipp megjelenítési késleltetés"
+        }
+    },
+    "tooltips": {
+        "navigation": {
+            "home": "Visszatérés a főoldalra",
+            "game": "Játék indítása vagy folytatása",
+            "achievements": "Eredmények és előrehaladás megtekintése",
+            "settings": "Játékbeállítások és preferenciák módosítása"
+        }
+    },
+    "messages": {
+        "bankruptcy": "Csődbe megy! Eladhatja eszközeit 50%-os értéken, hogy elkerülje.",
+        "downsized": "Létszámcsökkentés! {turns} kör kimarad.",
+        "payday": "Fizetés! ${amount} összeget kapott.",
+        "assetBought": "Megvásárolta: {asset} ${price}ért.",
+        "assetSold": "Eladta: {asset} ${price}ért."
+    }
+}

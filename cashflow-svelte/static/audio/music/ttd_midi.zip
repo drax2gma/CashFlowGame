@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Owen's Transport Tycoon Station</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="DESCRIPTION" content="A large site about Transport Tycoon with downloads, articles, game strategy, plus tools such as TTDAlter and TTDX Editor">
+<meta name="KEYWORDS" content="transport tycoon,transport,tycoon,deluxe,ttd,tto,tt,openttd,chris sawyer,microprose,infogrames,hasbro,ttdpatch,ttdalter,ttdx editor,ttdedit,ttsgm,saved game manager,railway,strategy,depository,station">
+<link href="../../styles.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="https://www.owenrudge.net/res/main.js"></script>
+</head>
+<body onLoad="MM_preloadImages('https://www.owenrudge.net/images/t01_hl.gif','https://www.owenrudge.net/images/t02_hl.gif','https://www.owenrudge.net/images/t04_hl.gif','https://www.owenrudge.net/images/t05_hl.gif','https://www.owenrudge.net/images/t06_hl.gif','https://www.owenrudge.net/images/t07_hl.gif','https://www.owenrudge.net/images/t08_hl.gif','https://www.owenrudge.net/images/t09_hl.gif','https://www.owenrudge.net/images/t03_hl.gif')" bgcolor="#DDDDDD" background="../../images/orange-vert.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<a href="https://www.owenrudge.net/"><img alt="owenrudge.net" src="https://www.owenrudge.net/images/owenrudge_left.gif" style="position: absolute; left: 0px; top: 0px" border="0" /></a>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" background="https://www.owenrudge.net/images/btn_nosides.gif">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+    <td valign="top"><img src="https://www.owenrudge.net/images/btn_dark.gif" width="1"><a href="https://www.owenrudge.net/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home Link','','https://www.owenrudge.net/images/t01_hl.gif',1)"><img alt="Home" src="https://www.owenrudge.net/images/t01_nrml.gif" name="Home Link" width="47" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.owenrudge.net/AoE/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Age of Empires Link','','https://www.owenrudge.net/images/t02_hl.gif',1)"><img alt="Age of Empires" src="https://www.owenrudge.net/images/t02_nrml.gif" name="Age of Empires Link" width="101" height="25" border="0"></a></td>
+
+    <td valign="top"><a href="https://www.owenrudge.net/desktop/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('DesktopShots Link','','https://www.owenrudge.net/images/t03_hl.gif',1)"><img alt="DesktopShots" src="https://www.owenrudge.net/images/t03_nrml.gif" name="DesktopShots Link" width="94" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.owenrudge.net/FreeDOS/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('FreeDOS','','https://www.owenrudge.net/images/t04_hl.gif',1)"><img alt="FreeDOS" src="https://www.owenrudge.net/images/t04_nrml.gif" name="FreeDOS" width="65" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.owenrudge.net/GEM/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GEM Link','','https://www.owenrudge.net/images/t05_hl.gif',1)"><img alt="GEM" src="https://www.owenrudge.net/images/t05_nrml.gif" name="GEM Link" width="38" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.owenrudge.net/osplus/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('OS Plus Link','','https://www.owenrudge.net/images/t06_hl.gif',1)"><img alt="OSPlus" src="https://www.owenrudge.net/images/t06_nrml.gif" name="OS Plus Link" width="54" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.transporttycoon.net/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Transport Tycoon Link','','https://www.owenrudge.net/images/t07_hl.gif',1)"><img alt="Transport Tycoon" src="https://www.owenrudge.net/images/t07_hl.gif" name="Transport Tycoon Link" width="113" height="25" border="0"></a></td>
+    <td valign="top"><a href="https://www.owenrudge.net/utils/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Utility Base Link','','https://www.owenrudge.net/images/t08_hl.gif',1)"><img alt="Utility Base" src="https://www.owenrudge.net/images/t08_nrml.gif" name="Utility Base Link" width="79" height="25" border="0"></a></td>
+    <td colspan="2" valign="top"><a href="https://www.owenrudge.net/vb/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Visual Basic Link','','https://www.owenrudge.net/images/t09_hl.gif',1)"><img alt="Visual Basic" src="https://www.owenrudge.net/images/t09_nrml.gif" name="Visual Basic Link" width="81" height="25" border="0"></a><img src="https://www.owenrudge.net/images/btn_light.gif" width="1"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0" background="../../images/orange-horiz.gif">
+      <tr>
+       <td><img src="../../images/header.gif" width="600" height="100" alt="Owen's Transport Tycoon Station"></td>
+      </tr>
+     </table>
+	</td>
+   </tr>
+   <tr>
+    <td>
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td width="200" valign="top"> <img src="../../images/sidehead.gif" width="200" height="100" alt="Owen's Transport Tycoon Station"><br><center>
+		<table width="160" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+          <td class="body">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<noindex>
+  <tr>
+    <td>&nbsp;<a href="../../" title="Home Page - news and updates." class="menu">Home</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../game" title="The Game - what is Transport Tycoon?" class="submenu">The Game</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../where" title="Where to get the game" class="submenu">Where To Get It</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../about" title="Credits, support and contact information" class="submenu">About The Site</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../contact" title="Find out how to get in touch" class="submenu">Contact Me</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="https://www.owenrudge.net/guestbook/ttstation.php" title="Sign my guestbook!" class="submenu">Guestbook</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../guide1" title="How to set up Transport Tycoon on your PC." class="menu">Game Setup Guide</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../guide1" title="An overview of the Transport Tycoon games available." class="submenu">Overview</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../guide2" title="What you need to set up OpenTTD." class="submenu">What You Need</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../guide3" title="How to install OpenTTD." class="submenu">Installing OpenTTD</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../rail" title="Tips and hints on building your rail network." class="menu">Rail Building</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail1" title="The Fundamentals - layout and signals." class="submenu">Fundamentals</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail2" title="Stations - All aboard!" class="submenu">Stations</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail3" title="Three way junctions - Suggested designs." class="submenu">3-Way Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail4" title="Four way junctions - Mental patients only." class="submenu">4-Way Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail5" title="Depots - Placement, forced servicing, and ordering." class="submenu">Depots</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../rail6" title="Check Points - What are they and where to use them." class="submenu">Check Points</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../junctions" title="Junctions - Build the perfect rail junctions." class="menu">Rail Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions1" title="The basic junctions." class="submenu">Basic Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions2" title="The double track cross junctions." class="submenu">Double-cross Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions3" title="The double track T-junctions." class="submenu">T-Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions4" title="Cross-over and out branch junctions." class="submenu">Crossover Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions5" title="Station in and out junction configurations." class="submenu">Station Configuration</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions6" title="Very complex multi-track junctions" class="submenu">Complex Junctions</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../junctions7" title="Examples of realistic track configurations" class="submenu">Realistic Track Configs</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../other1" title="Other Tips - Little bits of info that will help you along." class="menu">Other Tips</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../other1" title="Towns - Some hate you, some love you. Make &#039;em happy, make &#039;em grow." class="submenu">Towns</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../other2" title="Feeders - Turn one passenger into many!" class="submenu">Feeders</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../other3" title="Vehicle Usage - Across town or across the map." class="submenu">Vehicle Usage</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../misc" title="Miscellaneous Information" class="menu">Miscellaneous</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../vehicles" title="See a list of all the TT vehicles, with detailed information for all of them." class="submenu">Vehicle List</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../downloads" title="Downloads - saved games, scenarios and tools" class="menu">Downloads</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../download_savedgames" title="Download saved games for TTD here" class="submenu">Saved Games</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../download_scenarios" title="Download scenarios for TTD here" class="submenu">Scenarios</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../music" title="Listen to the TTD music here" class="submenu">Music</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../ttsgm" title="Transport Tycoon Saved Game Manager" class="submenu">Saved Game Manager</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../ttdalter" title="TTDAlter" class="submenu">TTDAlter</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../ttdxedit" title="TTDX Editor" class="submenu">TTDX Editor</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="../../links" title="Other Resources - links, newsgroups, forums, chat rooms." class="menu">Other Resources</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="../../links" title="Links to other sites" class="submenu">Links</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.tt-forums.net/" title="The Transport Tycoon Forums" class="submenu">The TT Forums</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://misc.owenrudge.net/ttgame/" title="The Ultimate Transport Tycoon Game Repository" class="submenu">The Repository</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a target="_blank" href="../../semifaq/" title="The Transport Tycoon Semi-FAQ" class="submenu">TT Semi-FAQ</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="https://www.locomotiondepot.net/" title="A site all about Chris Sawyer&#039;s Locomotion." class="submenu">Locomotion Depot</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;<a href="https://www.owenrudge.net/" title="owenrudge.net" class="submenu">owenrudge.net</a></td>
+  </tr>
+</noindex>
+  	 <tr><td><br><br><center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4357758776393046"
+     crossorigin="anonymous"></script>
+<!-- TT Station (sidebar) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4357758776393046"
+     data-ad-slot="2691189553"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+                          </center></td></tr>
+</table>
+	     </td>
+        </tr>
+       </table></center>
+      </td>
+      <td valign="top" class="body"> 
+         <p><span class="head">Page Not Found</span><br>
+              &nbsp;&nbsp;<span class="subhead">HTTP Error 404</span></p>
+
+<p><b>Sorry, the page you requested cannot be found.</b></p>
+
+<p>If you got this error by clicking another link on Owen's Transport Tycoon Station, please
+<a href="../../contact">contact me</a> and report the broken link.</p>
+
+<p>Please use the navigation bar on the left to choose where to go to now.</p>
+
+<p>If you were looking for a download for Transport Tycoon, click <a href="http://download.transporttycoon.net/">here</a>.</p>
+
+<p align="center" class="notes">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4357758776393046"
+     crossorigin="anonymous"></script>
+<!-- TT Station main -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4357758776393046"
+     data-ad-slot="2990572456"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</p>
+
+       </td>
+       <td valign="right" width="10px">&nbsp;</td>
+     </tr>
+    </table>
+    </td>
+   </tr>
+ </table>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" valign="bottom" align="center"><a href="https://www.owenrudge.net/"><img src="../../images/hq.gif" border="0" alt="Rudge HQ"></a></td>
+    <td class="notes" valign="bottom"><center>
+        <p><hr noshade color="#000000"><noindex>Copyright &copy; <a href="https://www.owenrudge.net/">Owen Rudge</a> 1999-2024. All Rights Reserved. Portions copyright &copy;
+           Adam Trevorrow 2001-2002.<br />Transport Tycoon is a trademark of 31x Ltd. Transport Tycoon graphics: copyright &copy; 31x Ltd. 1994-2013.</noindex></p>
+      </center></td>
+    <td valign="bottom" width="10px">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

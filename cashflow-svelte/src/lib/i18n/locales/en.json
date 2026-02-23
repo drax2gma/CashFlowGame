@@ -1,0 +1,97 @@
+{
+    "app": {
+        "title": "cashflow.gmz.hu",
+        "description": "A modern adaptation of the CashFlow 101 board game"
+    },
+    "navigation": {
+        "home": "Home",
+        "game": "Game",
+        "settings": "Settings",
+        "help": "Help"
+    },
+    "home": {
+        "welcome": "Welcome to CashFlowJs",
+        "clickToStart": "Click to start",
+        "version": "Version {version}",
+        "createNewGame": "Create New Game"
+    },
+    "setup": {
+        "title": "Game Setup",
+        "numberOfPlayers": "Number of Players",
+        "player": "Player {number}",
+        "name": "Name",
+        "insurance": "Insurance",
+        "job": "Job",
+        "color": "Color",
+        "randomJob": "Random Job",
+        "randomColor": "Random Color",
+        "startGame": "Start Game"
+    },
+    "game": {
+        "turn": "Turn {number}",
+        "currentPlayer": "Current Player: {name}",
+        "rollDice": "Roll Dice",
+        "endTurn": "End Turn",
+        "finance": "Finance",
+        "assets": "Assets",
+        "liabilities": "Liabilities",
+        "income": "Income",
+        "expenses": "Expenses",
+        "cash": "Cash"
+    },
+    "cards": {
+        "smallDeal": "Small Deal",
+        "bigDeal": "Big Deal",
+        "opportunity": "Opportunity",
+        "doodad": "Doodad",
+        "charity": "Charity",
+        "paycheck": "Paycheck",
+        "downsized": "Downsized",
+        "buy": "Buy",
+        "sell": "Sell",
+        "pass": "Pass",
+        "pay": "Pay"
+    },
+    "options": {
+        "title": "Game Options",
+        "insurance": "Downsize Insurance",
+        "kids": "Big Families",
+        "liquidating": "Liquidating Assets",
+        "paycheckDoodads": "Doodads with Paychecks",
+        "mortgage": "Mortgage Payments",
+        "speedStart": "Speed Start"
+    },
+    "settings": {
+        "language": "Language",
+        "audio": {
+            "title": "Audio Settings",
+            "masterVolume": "Master Volume",
+            "musicVolume": "Music Volume",
+            "sfxVolume": "Sound Effects Volume",
+            "enableMusic": "Enable Background Music",
+            "enableSfx": "Enable Sound Effects",
+            "enableUiSounds": "Enable UI Sounds",
+            "testMusic": "Test Music",
+            "testSfx": "Test SFX"
+        },
+        "tooltips": {
+            "title": "Tooltip Settings",
+            "delay": "Tooltip Display Delay"
+        }
+    },
+    "tooltips": {
+        "navigation": {
+            "home": "Return to the home page",
+            "game": "Start or continue your game",
+            "achievements": "View your achievements and progress",
+            "settings": "Adjust game settings and preferences"
+        }
+    },
+    "messages": {
+        "bankruptcy": "You're going bankrupt! You can sell assets for 50% value to avoid it.",
+        "downsized": "You've been downsized! Miss {turns} turns.",
+        "payday": "Payday! You received ${amount}.",
+        "assetBought": "You bought {asset} for ${price}.",
+        "assetSold": "You sold {asset} for ${price}."
+    }
+}

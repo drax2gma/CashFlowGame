@@ -98,10 +98,29 @@
         "show": "Show Financial Statement",
         "hide": "Hide Financial Statement"
     },
+    "general": {
+        "cancel": "Cancel"
+    },
     "assets": {
         "manage": "Manage Assets",
         "yourAssets": "Your Assets",
-        "noAssets": "No assets yet"
+        "noAssets": "No assets yet",
+        "buy": "Buy",
+        "value": "Value",
+        "income": "Income",
+        "sell": "Sell",
+        "availableAssets": "Available Assets",
+        "confirmSell": "Are you sure you want to sell {name}?",
+        "sellValue": "You will receive ${value} for this asset"
+    },
+    "liabilities": {
+        "yourLiabilities": "Your Liabilities",
+        "noLiabilities": "No liabilities yet",
+        "amount": "Amount",
+        "payment": "Payment",
+        "payOff": "Pay Off",
+        "takeLiability": "Take Liability",
+        "take": "Take"
     },
     "cards": {
         "yourCards": "Your Cards",

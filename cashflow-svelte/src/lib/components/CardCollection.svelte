@@ -1,12 +1,13 @@
 <script lang="ts">
   import Card from './Card.svelte';
+  import Translate from './Translate.svelte';
   import type { Asset, Liability } from '../stores/gameStore';
   
   // Props
   export let assets: Asset[] = [];
   export let liabilities: Liability[] = [];
-  export let title = 'Card Collection';
-  export let emptyMessage = 'No cards to display';
+  export let title = 'cards.yourCards';
+  export let emptyMessage = 'cards.noCards';
   
   // Get card type for asset
   function getAssetCardType(type: string): string {
@@ -41,10 +42,10 @@
 </script>
 
 <div class="card-collection">
-  <h3>{title}</h3>
+  <h3><Translate key={title} /></h3>
   
   {#if assets.length === 0 && liabilities.length === 0}
-    <p class="empty-message">{emptyMessage}</p>
+    <p class="empty-message"><Translate key={emptyMessage} /></p>
   {:else}
     <div class="cards-grid">
       <!-- Display assets -->

@@ -6,6 +6,7 @@
   import FastTrackBoard from '$lib/components/FastTrackBoard.svelte';
 
   import CardCollection from '$lib/components/CardCollection.svelte';
+  import GameCard from '$lib/components/Card.svelte';
   import Translate from '$lib/components/Translate.svelte';
   import Button from '$lib/components/Button.svelte';
   import Modal from '$lib/components/Modal.svelte';
@@ -383,6 +384,7 @@
         disabled={diceValue > 0 || isRolling}
         on:roll={handleDiceRoll}
       />
+      </div>
       
       <!-- Financial Dashboard -->
       {#if $currentPlayer}
@@ -390,15 +392,10 @@
       {/if}
       
       <div class="finance-actions">
-        <Button on:click={() => showAssetsLiabilities = !showAssetsLiabilities} variant="secondary" size="small">
+        <Button on:click={() => showAssetsLiabilities = true} variant="secondary" size="small">
           <Translate key="assets.manage" />
         </Button>
       </div>
-      
-      <!-- Asset/Liability Manager -->
-      {#if showAssetsLiabilities && $currentPlayer}
-        <AssetLiabilityManager player={$currentPlayer} show={showAssetsLiabilities} />
-      {/if}
       
       <!-- Player's card collection -->
       {#if $currentPlayer}
@@ -406,8 +403,8 @@
           <CardCollection 
             assets={$currentPlayer.assets}
             liabilities={$currentPlayer.liabilities}
-            title={"<Translate key=\"cards.yourCards\" />"}
-            emptyMessage={"<Translate key=\"cards.noCards\" />"}
+            title="cards.yourCards"
+            emptyMessage="cards.noCards"
           />
         </div>
       {/if}
@@ -427,7 +424,7 @@
   >
     <div class="card-modal-content">
       {#if currentCard}
-        <Card 
+        <GameCard 
           type={currentCard.type}
           title={currentCard.title}
           description={currentCard.description}
@@ -510,6 +507,25 @@
     </svelte:fragment>
   </Modal>
 </div>
+
+<!-- Finance Modal (Financial Statement & Manage Assets) -->
+<Modal
+  open={showAssetsLiabilities}
+  on:close={() => showAssetsLiabilities = false}
+  title=""
+  size="large"
+>
+  <div class="finance-modal-content">
+    {#if $currentPlayer}
+      <div class="finance-left">
+        <FinancialDashboard player={$currentPlayer} compact={false} />
+      </div>
+      <div class="finance-right">
+        <AssetLiabilityManager player={$currentPlayer} show={true} />
+      </div>
+    {/if}
+  </div>
+</Modal>
 
 <CharityModal 
   show={showCharityModal} 
@@ -753,6 +769,24 @@
     color: #2196F3;
     font-weight: bold;
     font-size: var(--font-size-medium);
+  }
+
+  .finance-modal-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+  }
+  
+  .finance-modal-content .finance-left,
+  .finance-modal-content .finance-right {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .finance-modal-content {
+      flex-direction: column;
+    }
   }
   
   /* Desktop and landscape tablet layout - enforced minimum */

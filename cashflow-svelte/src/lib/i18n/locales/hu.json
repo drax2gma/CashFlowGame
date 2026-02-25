@@ -98,10 +98,29 @@
         "show": "Pénzügyi kimutatás megjelenítése",
         "hide": "Pénzügyi kimutatás elrejtése"
     },
+    "general": {
+        "cancel": "Mégse"
+    },
     "assets": {
         "manage": "Eszközök kezelése",
         "yourAssets": "Az Ön eszközei",
-        "noAssets": "Még nincsenek eszközei"
+        "noAssets": "Még nincsenek eszközei",
+        "buy": "Vásárlás",
+        "value": "Érték",
+        "income": "Bevétel",
+        "sell": "Eladás",
+        "availableAssets": "Elérhető eszközök",
+        "confirmSell": "Biztosan el akarja adni a(z) {name} eszközt?",
+        "sellValue": "{value} összeget kap ezért az eszközért"
+    },
+    "liabilities": {
+        "yourLiabilities": "Az Ön kötelezettségei",
+        "noLiabilities": "Még nincsenek kötelezettségei",
+        "amount": "Összeg",
+        "payment": "Fizetés",
+        "payOff": "Törlesztés",
+        "takeLiability": "Kötelezettség felvétele",
+        "take": "Felvétel"
     },
     "cards": {
         "yourCards": "Az Ön kártyái",

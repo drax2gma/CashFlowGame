@@ -40,7 +40,6 @@ tmp
 docs/change log
 
 # Generated files
-src/lib/paraglide
 src/lib/server/db/auth.schema.ts
 
 # Test coverage

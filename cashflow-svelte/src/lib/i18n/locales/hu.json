@@ -93,5 +93,18 @@
         "payday": "Fizetés! ${amount} összeget kapott.",
         "assetBought": "Megvásárolta: {asset} ${price}ért.",
         "assetSold": "Eladta: {asset} ${price}ért."
+    },
+    "finance": {
+        "show": "Pénzügyi kimutatás megjelenítése",
+        "hide": "Pénzügyi kimutatás elrejtése"
+    },
+    "assets": {
+        "manage": "Eszközök kezelése",
+        "yourAssets": "Az Ön eszközei",
+        "noAssets": "Még nincsenek eszközei"
+    },
+    "cards": {
+        "yourCards": "Az Ön kártyái",
+        "noCards": "Még nincsenek kártyái"
     }
 }

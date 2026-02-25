@@ -10,7 +10,7 @@
   import Button from '$lib/components/Button.svelte';
   import Modal from '$lib/components/Modal.svelte';
   import Dice from '$lib/components/Dice.svelte';
-  import FinancialStatement from '$lib/components/FinancialStatement.svelte';
+  import FinancialDashboard from '$lib/components/FinancialDashboard.svelte';
   import AssetLiabilityManager from '$lib/components/AssetLiabilityManager.svelte';
   import CharityModal from '$lib/components/CharityModal.svelte';
   import DownsizeModal from '$lib/components/DownsizeModal.svelte';
@@ -23,7 +23,6 @@
   let diceValue = 0;
   let isRolling = false;
   let showCard = false;
-  let showFinancials = false;
   let showAssetsLiabilities = false;
   let showCharityModal = false;
   let showDownsizeModal = false;
@@ -385,52 +384,16 @@
         on:roll={handleDiceRoll}
       />
       
-      <div class="finance-summary">
-        <h3><Translate key="game.finance" /></h3>
-        {#if $currentPlayerFinance}
-          <div class="finance-item">
-            <span><Translate key="game.cash" />:</span>
-            <span class="amount">${$currentPlayerFinance.cash.toLocaleString()}</span>
-          </div>
-          <div class="finance-item">
-            <span><Translate key="game.assets" />:</span>
-            <span class="amount">${$currentPlayerFinance.totalAssets.toLocaleString()}</span>
-          </div>
-          <div class="finance-item">
-            <span><Translate key="game.liabilities" />:</span>
-            <span class="amount">${$currentPlayerFinance.totalLiabilities.toLocaleString()}</span>
-          </div>
-          <div class="finance-item net-worth">
-            <span>Net Worth:</span>
-            <span class="amount">${$currentPlayerFinance.netWorth.toLocaleString()}</span>
-          </div>
-        {/if}
-        
-        <div class="finance-actions">
-          <Button on:click={() => showFinancials = !showFinancials} variant="secondary" size="small">
-            {#if showFinancials}
-              <Translate key="finance.hide" />
-            {:else}
-              <Translate key="finance.show" />
-            {/if}
-          </Button>
-          <Button on:click={() => showAssetsLiabilities = !showAssetsLiabilities} variant="secondary" size="small">
-            <Translate key="assets.manage" />
-          </Button>
-        </div>
-      </div>
-      
-      <!-- Financial Statements -->
-      {#if showFinancials && $currentPlayer}
-        <div class="financial-statements">
-          <div class="statement-section">
-            <FinancialStatement player={$currentPlayer} type="income" />
-          </div>
-          <div class="statement-section">
-            <FinancialStatement player={$currentPlayer} type="balance" />
-          </div>
-        </div>
+      <!-- Financial Dashboard -->
+      {#if $currentPlayer}
+        <FinancialDashboard player={$currentPlayer} compact={true} />
       {/if}
+      
+      <div class="finance-actions">
+        <Button on:click={() => showAssetsLiabilities = !showAssetsLiabilities} variant="secondary" size="small">
+          <Translate key="assets.manage" />
+        </Button>
+      </div>
       
       <!-- Asset/Liability Manager -->
       {#if showAssetsLiabilities && $currentPlayer}
@@ -443,8 +406,8 @@
           <CardCollection 
             assets={$currentPlayer.assets}
             liabilities={$currentPlayer.liabilities}
-            title="Your Cards"
-            emptyMessage="You don't have any cards yet"
+            title={"<Translate key=\"cards.yourCards\" />"}
+            emptyMessage={"<Translate key=\"cards.noCards\" />"}
           />
         </div>
       {/if}
@@ -719,56 +682,27 @@
     border-radius: 8px;
     padding: var(--spacing-lg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
   }
 
   .dice-section {
     text-align: center;
   }
 
-  .finance-summary h3 {
-    margin-top: 0;
-    border-bottom: 1px solid var(--outline);
-    padding-bottom: var(--spacing-sm);
-  }
-
   .finance-actions {
     display: flex;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
-  }
-
-  .finance-item {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--spacing-sm) 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .finance-item:last-child {
-    border-bottom: none;
-  }
-
-  .finance-item.net-worth {
-    font-weight: bold;
-    border-top: 2px solid var(--outline);
-    margin-top: var(--spacing-sm);
-    padding-top: var(--spacing-sm);
-  }
-
-  .amount {
-    font-weight: 600;
+    justify-content: center;
   }
 
   .financial-statements {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
     margin: var(--spacing-lg) 0;
   }
 
   @media (max-width: 768px) {
     .financial-statements {
-      grid-template-columns: 1fr;
+      margin: var(--spacing-md) 0;
     }
   }
 

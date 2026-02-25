@@ -1,34 +1,15 @@
 <script lang="ts">
 	import { locale } from '../i18n';
-	import { onMount } from 'svelte';
-	import Translate from './Translate.svelte';
 
 	// Available languages
 	const languages = [
 		{ code: 'en', name: 'English' },
 		{ code: 'hu', name: 'Magyar' } // Hungarian
 	];
-
-	// Set initial locale
-	onMount(() => {
-		// You can set the initial locale here based on user preferences
-		// For now, we'll just use the default
-	});
-
-	function changeLanguage(code: string) {
-		$locale = code;
-	}
 </script>
 
 <div class="language-selector">
-	<label for="language-select">
-		<Translate key="settings.language" />
-	</label>
-	<select
-		id="language-select"
-		bind:value={$locale}
-		on:change={(e) => changeLanguage(e.target.value)}
-	>
+	<select id="language-select" bind:value={$locale}>
 		{#each languages as lang}
 			<option value={lang.code}>{lang.name}</option>
 		{/each}
@@ -44,11 +25,6 @@
 		background: var(--surface);
 		border-radius: 8px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	}
-
-	label {
-		font-weight: 600;
-		color: var(--on-surface);
 	}
 
 	select {

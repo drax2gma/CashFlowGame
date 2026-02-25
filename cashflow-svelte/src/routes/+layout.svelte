@@ -1,7 +1,5 @@
 <script lang="ts">
-  import { locale } from '$lib/i18n';
-  import { getPreferredLocale } from '$lib/i18n';
-  import '$lib/i18n';
+	import { locale } from '$lib/i18n';
   import { onMount, onDestroy } from 'svelte';
   import { browser } from '$app/environment';
   import './layout.css';
@@ -27,12 +25,9 @@
 
   onMount(() => {
     // Set the initial locale based on user preferences
-    $locale = getPreferredLocale();
-    
-    // Add global click handler for UI sounds (browser only)
-    if (browser) {
-      window.addEventListener('click', handleGlobalClick, true);
-    }
+		if (!$locale) {
+			$locale = 'en';
+		}
   });
 
   onDestroy(() => {

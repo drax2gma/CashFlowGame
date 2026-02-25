@@ -114,11 +114,10 @@ export class AudioManager {
   
   // Play UI click sound (public method for global use)
   public playUiClick() {
+    this.ensureSettingsLoaded();
     if (!this.isInitialized || !this.uiSoundsEnabled || !this.audioContext) return;
     this.playClick(this.sfxVolume * this.masterVolume * 0.4);
   }
-  
-  // SYNTHESIZERS
   
   private playSweep(startFreq: number, endFreq: number, duration: number, type: OscillatorType, volume: number, bellDecay: boolean = false) {
     if (!this.audioContext) return;

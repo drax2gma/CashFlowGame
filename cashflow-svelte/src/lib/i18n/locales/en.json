@@ -93,5 +93,18 @@
         "payday": "Payday! You received ${amount}.",
         "assetBought": "You bought {asset} for ${price}.",
         "assetSold": "You sold {asset} for ${price}."
+    },
+    "finance": {
+        "show": "Show Financial Statement",
+        "hide": "Hide Financial Statement"
+    },
+    "assets": {
+        "manage": "Manage Assets",
+        "yourAssets": "Your Assets",
+        "noAssets": "No assets yet"
+    },
+    "cards": {
+        "yourCards": "Your Cards",
+        "noCards": "You don't have any cards yet"
     }
 }

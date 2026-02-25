@@ -22,11 +22,6 @@
     goto('/game');
   }
   
-  function viewCards() {
-    // Navigate to cards demo
-    goto('/cards');
-  }
-  
   function viewSettings() {
     // Navigate to settings
     goto('/settings');
@@ -56,10 +51,6 @@
       
       <button class="game-button" on:click={viewGame}>
         View Game
-      </button>
-      
-      <button class="demo-button" on:click={viewCards}>
-        View 3D Cards Demo
       </button>
       
       <button class="dashboard-button" on:click={() => goto('/dashboard')}>
@@ -161,17 +152,6 @@
   
   .game-button:hover {
     background: #512DA8;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .demo-button {
-    background: #9C27B0;
-    color: white;
-  }
-  
-  .demo-button:hover {
-    background: #7B1FA2;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }

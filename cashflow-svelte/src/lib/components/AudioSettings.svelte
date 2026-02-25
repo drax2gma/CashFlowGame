@@ -44,9 +44,7 @@
   <h2><Translate key="settings.audio.title" /></h2>
   
   <div class="setting-group">
-    <label for="sfx-volume">
-      <Translate key="settings.audio.sfxVolume" />
-    </label>
+    <label for="sfx-volume">Volume</label>
     <div class="slider-container">
       <input 
         type="range" 
@@ -60,26 +58,26 @@
     </div>
   </div>
   
-  <div class="setting-group checkboxes">
-    <ToggleSwitch 
-      bind:checked={sfxEnabled}
-      label="Enable Sound Effects"
-    />
+  <div class="setting-group">
+    <div class="toggle-row">
+      <ToggleSwitch 
+        bind:checked={sfxEnabled}
+        label="Sound Effects"
+      />
+      <button on:click={testSfx} class="test-button" disabled={!sfxEnabled}>
+        Test
+      </button>
+    </div>
     
-    <ToggleSwitch 
-      bind:checked={uiSoundsEnabled}
-      label="Enable UI Sounds"
-    />
-  </div>
-  
-  <div class="test-buttons">
-    <button on:click={testSfx} class="test-button">
-      <Translate key="settings.audio.testSfx" />
-    </button>
-    
-    <button on:click={testUiClick} class="test-button">
-      Test UI Click
-    </button>
+    <div class="toggle-row">
+      <ToggleSwitch 
+        bind:checked={uiSoundsEnabled}
+        label="UI Sounds"
+      />
+      <button on:click={testUiClick} class="test-button" disabled={!uiSoundsEnabled}>
+        Test
+      </button>
+    </div>
   </div>
 </div>
 
@@ -143,41 +141,50 @@
     font-weight: 600;
   }
 
-  .checkboxes {
+  .toggle-row {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
   }
 
-  .test-buttons {
-    display: flex;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+  .toggle-row + .toggle-row {
+    border-top: 1px solid var(--outline);
+    padding-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
   }
 
   .test-button {
-    flex: 1;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-xs) var(--spacing-md);
     background-color: var(--primary);
     color: var(--on-primary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    min-width: 60px;
   }
 
-  .test-button:hover {
+  .test-button:hover:not(:disabled) {
     background-color: #1565C0;
   }
 
+  .test-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
   @media (max-width: 480px) {
-    .test-buttons {
+    .toggle-row {
       flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
     }
     
     .test-button {
-      width: 100%;
+      align-self: flex-end;
     }
   }
 </style>

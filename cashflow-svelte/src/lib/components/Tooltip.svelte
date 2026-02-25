@@ -17,7 +17,7 @@
   $: actualDelay = delay ?? $settingsStore.tooltipDelay;
   
   // Get translated text (supports both direct text and translation keys)
-  $: displayText = text.includes('.') ? $_(text) : text;
+  $: displayText = text.includes('.') ? $_(text) || text : text;
   
   // Show tooltip with delay (only if enabled in settings)
   function handleMouseEnter() {

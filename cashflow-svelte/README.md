@@ -20,7 +20,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv create --template library --types ts --add prettier eslint vitest="usages:unit,component" playwright tailwindcss="plugins:none" sveltekit-adapter="adapter:auto" devtools-json drizzle="database:sqlite+sqlite:libsql" better-auth="demo:password" mdsvex paraglide="languageTags:en, hu+demo:no" storybook mcp="ide:vscode+setup:remote" --install npm cashflow-svelte
+npx sv create --template library --types ts --add prettier eslint vitest="usages:unit,component" playwright tailwindcss="plugins:none" sveltekit-adapter="adapter:auto" devtools-json drizzle="database:sqlite+sqlite:libsql" better-auth="demo:password" mdsvex storybook mcp="ide:vscode+setup:remote" --install npm cashflow-svelte
 ```
 
 ## Developing
